@@ -14,6 +14,7 @@ Imports:
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
 Suggests: 
-    testthat (>= 2.99.0)
+    testthat (>= 2.99.0),
+    covr
 Remotes: r-lib/testthat
 Config/testthat/edition: 3
