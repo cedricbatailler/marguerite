@@ -11,3 +11,5 @@ LazyData: true
 RoxygenNote: 7.1.1
 Imports: 
     stringr
+URL: https://github.com/cedricbatailler/marguerite
+BugReports: https://github.com/cedricbatailler/marguerite/issues
