@@ -1,0 +1,33 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# marguerite
+
+<!-- badges: start -->
+[![R build status](https://github.com/cedricbatailler/marguerite/workflows/R-CMD-check/badge.svg)](https://github.com/cedricbatailler/marguerite/actions)
+<!-- badges: end -->
+
+
+`marguerite` is a collection of miscellaneous `R` functions.
+
+## Installation
+
+You can install  the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("cedricbatailler/marguerite")
+```
+
