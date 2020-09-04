@@ -14,7 +14,10 @@ Imports:
     dplyr,
     rlang (>= 0.1.2),
     tibble,
-    magrittr
+    magrittr,
+    broom,
+    tidyr,
+    janitor
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
 Suggests: 
