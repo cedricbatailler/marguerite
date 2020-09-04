@@ -11,7 +11,9 @@ LazyData: true
 RoxygenNote: 7.1.1
 Imports: 
     stringr,
+    dplyr,
     rlang (>= 0.1.2),
+    tibble,
     magrittr
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
