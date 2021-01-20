@@ -20,7 +20,8 @@ Imports:
     janitor,
     JSmediation,
     car,
-    purrr
+    purrr,
+    ggplot2
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
 Suggests: 
