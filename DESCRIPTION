@@ -21,7 +21,10 @@ Imports:
     JSmediation,
     car,
     purrr,
-    ggplot2
+    ggplot2,
+    rvg,
+    officer,
+    glue
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
 Suggests: 
