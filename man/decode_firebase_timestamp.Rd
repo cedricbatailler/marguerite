@@ -11,7 +11,6 @@ decode_firebase_timestamp(id)
 }
 \value{
 A date (POSIXct)
-#'
 }
 \description{
 Decode a vector of firebase id into timestamp

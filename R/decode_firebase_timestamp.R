@@ -3,7 +3,7 @@
 #' @param id Firebase id (charachter).
 #'
 #' @return A date (POSIXct)
-#'#'
+#'
 #' @export
 
 decode_firebase_timestamp <- function(id) {
