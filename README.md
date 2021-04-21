@@ -1,8 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-marguerite
-==========
+# marguerite <img src='man/figures/logo.png' align="right" height="130" />
 
 <!-- badges: start -->
 
@@ -14,11 +13,12 @@ coverage](https://codecov.io/gh/cedricbatailler/marguerite/branch/master/graph/b
 
 `marguerite` is a collection of miscellaneous `R` functions.
 
-Installation
-------------
+## Installation
 
 You can install the development version from
 [GitHub](https://github.com/) with:
 
-    # install.packages("devtools")
-    devtools::install_github("cedricbatailler/marguerite")
+``` r
+# install.packages("devtools")
+devtools::install_github("cedricbatailler/marguerite")
+```
