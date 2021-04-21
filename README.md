@@ -22,3 +22,21 @@ You can install the development version from
 # install.packages("devtools")
 devtools::install_github("cedricbatailler/marguerite")
 ```
+
+## Functions
+
+The following functions are implemented/objects are exported:
+
+Analysis
+
+-   `lm_outliers`
+-   `tidy_es`
+
+Export helper:
+
+-   `ggsave`
+-   `ggplot_to_pptx`
+
+Miscellaneous:
+
+-   `decode_firebase_timestamp`
