@@ -24,12 +24,15 @@ Imports:
     ggplot2,
     rvg,
     officer,
-    glue
+    glue,
+    httr2
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
 Suggests: 
     testthat (>= 2.99.0),
     covr,
     roxygen2
-Remotes: r-lib/testthat
+Remotes: 
+    r-lib/testthat
+    r-lib/httr2
 Config/testthat/edition: 3
