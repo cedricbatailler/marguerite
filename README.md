@@ -40,3 +40,4 @@ Export helper:
 Miscellaneous:
 
 -   `decode_firebase_timestamp`
+-   `latex_to_image`
