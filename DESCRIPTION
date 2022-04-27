@@ -8,11 +8,11 @@ Description: Collection of miscellaneous functions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Imports: 
     stringr,
     dplyr,
-    rlang (>= 0.1.2),
+    rlang (>= 0.4.11),
     tibble,
     magrittr,
     broom,
