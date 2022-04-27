@@ -8,7 +8,7 @@
 [![R build
 status](https://github.com/cedricbatailler/marguerite/workflows/R-CMD-check/badge.svg)](https://github.com/cedricbatailler/marguerite/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/cedricbatailler/marguerite/branch/master/graph/badge.svg)](https://codecov.io/gh/cedricbatailler/marguerite?branch=master)
+coverage](https://codecov.io/gh/cedricbatailler/marguerite/branch/main/graph/badge.svg)](https://codecov.io/gh/cedricbatailler/marguerite?branch=master)
 <!-- badges: end -->
 
 `marguerite` is a collection of miscellaneous `R` functions.
