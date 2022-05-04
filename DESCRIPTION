@@ -33,6 +33,6 @@ Suggests:
     covr,
     roxygen2
 Remotes: 
-    r-lib/testthat
+    r-lib/testthat,
     r-lib/httr2
 Config/testthat/edition: 3
