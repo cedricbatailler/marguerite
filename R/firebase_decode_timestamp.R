@@ -6,7 +6,7 @@
 #'
 #' @export
 
-decode_firebase_timestamp <- function(id) {
+firebase_decode_timestamp <- function(id) {
     id <- stringr::str_sub(id, 1, 8)
     unname(convert_firebase_id_v(id))
 }
