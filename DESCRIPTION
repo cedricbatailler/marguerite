@@ -14,7 +14,6 @@ Imports:
     dplyr,
     rlang (>= 0.4.11),
     tibble,
-    magrittr,
     broom,
     tidyr,
     janitor,
