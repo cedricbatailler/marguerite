@@ -26,7 +26,8 @@ Imports:
     rvg,
     officer,
     glue,
-    httr2
+    httr2,
+    utils
 URL: https://github.com/cedricbatailler/marguerite
 BugReports: https://github.com/cedricbatailler/marguerite/issues
 Suggests: 

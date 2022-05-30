@@ -17,7 +17,7 @@ latex_to_image <- function(latex, path, format = "png"){
   image_url <-
     glue::glue("http://latex.codecogs.com/{format}.download?{latex}",
                latex =
-                 URLencode(latex) |>
+                 utils::URLencode(latex) |>
                  stringr::str_replace_all("\\=", "%3D")
     )
 
