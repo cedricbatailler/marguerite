@@ -27,7 +27,7 @@ library(magrittr)
 mtcars |>
   lm_outliers(mpg ~ disp) |>
   lm(mpg ~ disp,
-     data = .)
+     data = _)
 
 }
 \references{

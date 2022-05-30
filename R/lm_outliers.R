@@ -16,7 +16,7 @@
 #' mtcars |>
 #'   lm_outliers(mpg ~ disp) |>
 #'   lm(mpg ~ disp,
-#'      data = .)
+#'      data = _)
 #'
 #' @author Dominique Muller, \email{dominique.muller@@univ-grenoble-alpes.fr}
 #' @author Cédric Batailler, \email{cedric.batailler@@univ-grenoble-alpes.fr}
