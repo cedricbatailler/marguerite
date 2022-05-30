@@ -13,8 +13,8 @@
 #' @examples
 #' library(magrittr)
 #'
-#' mtcars %>%
-#'   lm_outliers(mpg ~ disp) %>%
+#' mtcars |>
+#'   lm_outliers(mpg ~ disp) |>
 #'   lm(mpg ~ disp,
 #'      data = .)
 #'
@@ -44,10 +44,10 @@ lm_outliers <- function(data, formula, id, verbose = FALSE) {
     Out$leverage <- stats::hatvalues(fit)
 
     outlier_data <-
-        data %>%
-        dplyr::select(!!name_id) %>%
-        cbind(Out) %>%
-        dplyr::arrange(dplyr::desc("cookd")) %>%
+        data |>
+        dplyr::select(!!name_id) |>
+        cbind(Out) |>
+        dplyr::arrange(dplyr::desc("cookd")) |>
         tibble::as_tibble()
 
     if (verbose)

@@ -24,8 +24,8 @@ and residuals' hat values.
 \examples{
 library(magrittr)
 
-mtcars \%>\%
-  lm_outliers(mpg ~ disp) \%>\%
+mtcars |>
+  lm_outliers(mpg ~ disp) |>
   lm(mpg ~ disp,
      data = .)
 

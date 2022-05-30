@@ -27,12 +27,12 @@ ggplot_to_pptx <-
 
         plot_vectorial <- rvg::dml(ggobj = plot)
 
-        officer::read_pptx(template_location) %>%
+        officer::read_pptx(template_location) |>
             officer::ph_with(plot_vectorial,
                              location = officer::ph_location(left   = 0.1,
                                                              top    = 0.1,
                                                              width  = 9.8 / w_r,
-                                                             height = 7.3)) %>%
-            print(target = file) %>%
+                                                             height = 7.3)) |>
+            print(target = file) |>
             invisible()
     }
