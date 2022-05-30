@@ -22,8 +22,6 @@ model. Indices include studentized residuals, residuals' cook's distance,
 and residuals' hat values.
 }
 \examples{
-library(magrittr)
-
 mtcars |>
   lm_outliers(mpg ~ disp) |>
   lm(mpg ~ disp,

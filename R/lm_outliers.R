@@ -11,8 +11,6 @@
 #'   the output. Useful when using \code{lm_outliers} with pipes.
 #'
 #' @examples
-#' library(magrittr)
-#'
 #' mtcars |>
 #'   lm_outliers(mpg ~ disp) |>
 #'   lm(mpg ~ disp,
