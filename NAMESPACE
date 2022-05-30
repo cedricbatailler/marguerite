@@ -3,6 +3,7 @@
 S3method(tidy_es,lm)
 export("%>%")
 export(decode_firebase_timestamp)
+export(firebase_download)
 export(ggplot_to_pptx)
 export(ggsave)
 export(latex_to_image)
