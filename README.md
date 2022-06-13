@@ -27,7 +27,7 @@ devtools::install_github("cedricbatailler/marguerite")
 
 The following functions are implemented/objects are exported:
 
-Analysis
+Analysis:
 
 -   `lm_outliers`
 -   `tidy_es`
@@ -37,7 +37,12 @@ Export helper:
 -   `ggsave`
 -   `ggplot_to_pptx`
 
+Firebase:
+
+-   `firebase_decode_timestamp`
+-   `firebase_download`
+
+
 Miscellaneous:
 
--   `decode_firebase_timestamp`
 -   `latex_to_image`

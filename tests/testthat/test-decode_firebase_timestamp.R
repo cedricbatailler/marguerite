@@ -5,8 +5,8 @@ test_that("decode_firebase_timestamp produced timestamps as intended", {
 
     firebase_timestamp    <- 1598428357046 / 1000
 
-    firebase_id_decoded <- decode_firebase_timestamp(firebase_id)
-    firebase_id_truncated_decoded <- decode_firebase_timestamp(firebase_id_truncated)
+    firebase_id_decoded <- firebase_decode_timestamp(firebase_id)
+    firebase_id_truncated_decoded <- firebase_decode_timestamp(firebase_id_truncated)
 
     expect_equal(firebase_id_decoded, firebase_timestamp)
     expect_equal(firebase_id_truncated_decoded, firebase_timestamp)
