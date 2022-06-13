@@ -30,7 +30,7 @@ ggsave <- function(filename, plot = ggplot2::last_plot(),
                    width = 8.5, height = 4.75, units = "in",
                    dpi = 600, limitsize = TRUE, ...) {
 
-    ggplot2::ggsave(filename, plot = plot, device = device, path = path,
-                    scale = scale, width = width, height = height,
-                    units = units, dpi = dpi, limitsize = limitsize, ...)
+  ggplot2::ggsave(filename, plot = plot, device = device, path = path,
+                  scale = scale, width = width, height = height,
+                  units = units, dpi = dpi, limitsize = limitsize, ...)
 }
