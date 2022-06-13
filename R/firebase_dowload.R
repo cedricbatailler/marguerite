@@ -5,8 +5,6 @@
 #'
 #' @return A list.
 #' @export
-#'
-#' @examples
 firebase_download <- function(url, ref = "/") {
     # prep request
     req <-
