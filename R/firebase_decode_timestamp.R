@@ -7,8 +7,8 @@
 #' @export
 
 firebase_decode_timestamp <- function(id) {
-    id <- stringr::str_sub(id, 1, 8)
-    unname(convert_firebase_id_v(id))
+  id <- stringr::str_sub(id, 1, 8)
+  unname(convert_firebase_id_v(id))
 }
 
 
@@ -22,13 +22,13 @@ firebase_decode_timestamp <- function(id) {
 #'
 #' @keywords internal
 convert_firebase_id <- function(id) {
-    PUSH_CHARS <- "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz";
-    timestamp <- 0
-    for (i in 1:stringr::str_length(id)) {
-        c <- stringr::str_sub(id, i, i)
-        timestamp = timestamp * 64 + (stringr::str_locate(PUSH_CHARS, c)[1] - 1)
-    }
-    timestamp / 1000
+  PUSH_CHARS <- "-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz";
+  timestamp <- 0
+  for (i in 1:stringr::str_length(id)) {
+    c <- stringr::str_sub(id, i, i)
+    timestamp = timestamp * 64 + (stringr::str_locate(PUSH_CHARS, c)[1] - 1)
+  }
+  timestamp / 1000
 
 }
 
@@ -36,4 +36,4 @@ convert_firebase_id <- function(id) {
 #'
 #' @keywords internal
 convert_firebase_id_v <-
-    Vectorize(convert_firebase_id, "id")
+  Vectorize(convert_firebase_id, "id")

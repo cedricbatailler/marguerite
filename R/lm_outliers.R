@@ -34,22 +34,22 @@
 
 lm_outliers <- function(data, formula, id, verbose = FALSE) {
 
-    name_id <- enquo(id)
-    fit <- stats::lm(formula, data)
-    Out <- stats::model.frame(fit)
-    Out$sdr <- stats::rstudent(fit)
-    Out$cookd <- stats::cooks.distance(fit)
-    Out$leverage <- stats::hatvalues(fit)
+  name_id <- enquo(id)
+  fit <- stats::lm(formula, data)
+  Out <- stats::model.frame(fit)
+  Out$sdr <- stats::rstudent(fit)
+  Out$cookd <- stats::cooks.distance(fit)
+  Out$leverage <- stats::hatvalues(fit)
 
-    outlier_data <-
-        data |>
-        dplyr::select(!!name_id) |>
-        cbind(Out) |>
-        dplyr::arrange(dplyr::desc("cookd")) |>
-        tibble::as_tibble()
+  outlier_data <-
+    data |>
+    dplyr::select(!!name_id) |>
+    cbind(Out) |>
+    dplyr::arrange(dplyr::desc("cookd")) |>
+    tibble::as_tibble()
 
-    if (verbose)
-        print(outlier_data)
+  if (verbose)
+    print(outlier_data)
 
-    outlier_data
+  outlier_data
 }

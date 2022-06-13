@@ -6,17 +6,17 @@
 #' @return A list.
 #' @export
 firebase_download <- function(url, ref = "/") {
-    # prep request
-    req <-
-        glue::glue("{url}{ref}.json") |>
-        httr2::request() |>
-        httr2::req_headers(
-            Accept = "application/json"
-        )
+  # prep request
+  req <-
+    glue::glue("{url}{ref}.json") |>
+    httr2::request() |>
+    httr2::req_headers(
+      Accept = "application/json"
+    )
 
-    # perform the request
-    resp <- httr2::req_perform(req)
+  # perform the request
+  resp <- httr2::req_perform(req)
 
-    # export the json body
-    httr2::resp_body_json(resp)
+  # export the json body
+  httr2::resp_body_json(resp)
 }
